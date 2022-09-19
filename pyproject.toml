@@ -7,6 +7,7 @@ authors = ["Andrey Goryachev <raikslerx@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 vk-api = "^11.9.9"
+psycopg2-binary = "^2.9.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
