@@ -1,5 +1,4 @@
 import random
-from sqlite3 import connect
 import vk_api
 import psycopg2
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
