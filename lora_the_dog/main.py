@@ -30,7 +30,7 @@ class Db_manager:
 def write_msg(chat_id, message, reply_to_id=None):
     vk.method('messages.send', {'chat_id' : chat_id, 'message' : message, 'random_id' : 0})
 
-token_vk = ''
+token_vk = input('Paste your VK token here: ')
 vk = vk_api.VkApi(token=token_vk)                                                  # Авторизация вк
 longpoll = VkBotLongPoll(vk, 215943276)                                            # Класс для работы с лонгполл сервером вк
 
