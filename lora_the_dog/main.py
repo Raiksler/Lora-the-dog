@@ -31,7 +31,7 @@ def write_msg(chat_id, message, reply_to_id=None):
 
 token_vk = input('Paste your VK token here: ')
 vk = vk_api.VkApi(token=token_vk)                                                  # Авторизация вк
-longpoll = VkBotLongPoll(vk, 215943276)                                            # Класс для работы с лонгполл сервером вк
+longpoll = VkBotLongPoll(vk, 215943276, wait=25)                                   # Класс для работы с лонгполл сервером вк
 
 for event in longpoll.listen():                                                    # Основной цикл, прослушивание long poll
     if event.type == VkBotEventType.MESSAGE_NEW and event.object.message['text'][1:14] == 'club215943276':
