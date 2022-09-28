@@ -5,8 +5,12 @@ services:
       build: ./
       command: poetry run python3 lora_the_dog/main.py
       restart: always
+      networks:
+         - default
       depends_on:
          - db_server
    db_server:
       build: db/
+      networks:
+         - default
 

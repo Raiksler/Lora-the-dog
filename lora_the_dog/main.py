@@ -8,7 +8,7 @@ import dialog_const
 
 class Db_manager:
     def __init__(self):
-        self.connection = psycopg2.connect(user='postgres', password='pgadminpass', host='localhost', database='lora_the_dog')
+        self.connection = psycopg2.connect(user='postgres', password='pgadminpass', host='db_server', database='lora_the_dog')   # Измеить db_server на localhost, если приложение разворачивается локально, без использования docker.
         self.cursor = self.connection.cursor()
 
     def is_chat_in_db(self, id):
