@@ -153,6 +153,14 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
+name = "schedule"
+version = "1.1.0"
+description = "Job scheduling for humans."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "urllib3"
 version = "1.26.12"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
@@ -191,7 +199,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "16fb829a3f1192ccc1a35220de30f72c58a5fdeedff2cea841b9f33865904a04"
+content-hash = "fd37aa4b95aa0bce1b54c42aaa4d157d52bf50437b3a2935349aea3168efb9b4"
 
 [metadata.files]
 atomicwrites = []
@@ -208,6 +216,7 @@ py = []
 pyparsing = []
 pytest = []
 requests = []
+schedule = []
 urllib3 = []
 vk-api = []
 wcwidth = []

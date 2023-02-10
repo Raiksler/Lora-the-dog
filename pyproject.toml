@@ -8,6 +8,7 @@ authors = ["Andrey Goryachev <raikslerx@gmail.com>"]
 python = "^3.10"
 vk-api = "^11.9.9"
 psycopg2-binary = "^2.9.3"
+schedule = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
