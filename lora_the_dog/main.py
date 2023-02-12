@@ -4,6 +4,7 @@ import psycopg2
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 import threading
 import schedule
+from time import sleep
 import env
 from weather import Weather
 import dialog_const
@@ -63,6 +64,7 @@ def morning_weather():
     schedule.every().day.at("08:00").do(weather_forecast)        #Назначаем событие и интервал повторения
     while True:
         schedule.run_pending()                                #Запускаем выполнение графика
+        sleep(3540)
 
 
 if env.vk_token != None:
